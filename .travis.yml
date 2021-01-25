@@ -21,7 +21,7 @@ jobs:
       compiler: clang
       osx_image: xcode11.2
       env:
-        - MATRIX_EVAL=""
+        - MATRIX_EVAL="CC=clang && CXX=clang++"
     - os: linux
       dist: bionic
       compiler: gcc
