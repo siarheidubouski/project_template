@@ -37,6 +37,8 @@ jobs:
             # I couldn't get ${GCC_VER} in here successfully
             - gcc-9
             - g++-9
+            - clang-11
+            - clang++
             - doxygen
             - python3-pip
       after_script:
