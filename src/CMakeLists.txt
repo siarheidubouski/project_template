@@ -1,7 +1,7 @@
-option(CPP_STARTER_USE_QT "Enable compilation of QT sample" OFF)
+option(QT "Enable compilation of QT sample" OFF)
 
 # qt
-if(CPP_STARTER_USE_QT)
+if(QT)
   message("Using Qt")
   add_subdirectory(qt)
 endif()

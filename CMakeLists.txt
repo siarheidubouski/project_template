@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.19)
+cmake_minimum_required(VERSION 3.15)
 
 project(project_template_cpp CXX)
 include(cmake/StandardProjectSettings.cmake)
@@ -62,7 +62,6 @@ include(cmake/Conan.cmake)
 run_conan()
 
 if(ENABLE_TESTING)
-  set(CMAKE_HAVE_LIBC_PTHREAD 1)
   enable_testing()
   message("Building Tests. Be sure to check out test/constexpr_tests for constexpr testing")
   add_subdirectory(tests)

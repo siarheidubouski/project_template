@@ -30,12 +30,12 @@ HelloWorld::HelloWorld(QWidget *parent) : QWidget(parent)
   // and effects
   // By using this "new style" connect the types are checked at compile time to
   // match
-  connect(pushButton, &QPushButton::clicked, this, &HelloQt::writeToDebug);
+  connect(pushButton, &QPushButton::clicked, this, &HelloWorld::writeToDebug);
   // Lambdas can also be used as can ordinary freestanding functions
   connect(directButton, &QPushButton::clicked, []() { qDebug() << tr("I am in line"); });
   // Most usefull signals and slots are already built into the framework.
-  connect(fatal, &QPushButton::clicked, this, &HelloQt::close);// could just use close
-};
+  connect(fatal, &QPushButton::clicked, this, &HelloWorld::close);// could just use close
+}
 
 void HelloWorld::writeToDebug(void)
 {
