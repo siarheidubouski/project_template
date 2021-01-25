@@ -12,6 +12,6 @@
 find_package(GTest REQUIRED)
 include(GoogleTest)
 
-add_executable(tests tests/gtest_main.cpp tests/tests.cpp tests/constexpr_test.cpp)
-target_link_libraries(tests GTest::GTest GTest::Main)
+add_executable(tests constexpr_test.cpp)
+target_link_libraries(tests GTest::GTest GTest::Main -lpthread)
 gtest_discover_tests(tests)

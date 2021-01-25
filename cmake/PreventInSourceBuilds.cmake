@@ -1,3 +1,4 @@
+#
 # This function will prevent in-source builds
 function(AssureOutOfSourceBuilds)
   # make sure the user doesn't play dirty with symlinks
